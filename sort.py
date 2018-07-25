@@ -1,9 +1,6 @@
-
 #!/usr/bin/python2
 
 import sys as s
-# Important for big lists
-s.setrecursionlimit(1000000)
 
 def fusion_sort(left, right=[]):
     '''Sorts a list by dividing it into sublists and
@@ -38,5 +35,4 @@ def fuse(left, right):
     else:
         return list + right[ri:]
 
-# This just segfaults
 print(fusion_sort([1,2,4,5,2,4,1,43,5,43,43]))
