@@ -1,6 +1,6 @@
 import java.util.Random;
 
-class TestJavaProgram
+class RandomProgram
 {
     public static void main(String... argv)
     {
