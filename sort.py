@@ -13,11 +13,11 @@ def fusion_sort(left, right=[]):
     if (len(left) <= 1 and len(right) <= 1):
         return fuse(left, right)
 
-    l = fusion_sort(left[:len(left)/2-1:-1], left[len(left)/2-1::1])
+    l = fusion_sort(left[0:len(left)/2-1:1], left[len(left)/2-1::1])
     if len(right) == 0:
         return l
    
-    r = fusion_sort(right[:len(right)/2-1:1], right[len(right)/2-1::1])
+    r = fusion_sort(right[0:len(right)/2-1:1], right[len(right)/2-1::1])
     return fuse(l,r)
     
 def fuse(left, right):
