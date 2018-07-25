@@ -1,0 +1,6 @@
+*.class
+*.o
+*.dla
+*.dnm
+Addresses
+MemoryIssue
