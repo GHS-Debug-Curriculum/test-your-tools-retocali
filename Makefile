@@ -1,6 +1,6 @@
-CC         = gcc
+CC         = /usr/bin/gcc
 JAVAC      = javac
-CCFLAGS    ?= -std=c89 -pedantic -Wall -Werror
+CCFLAGS    ?= -std=c89 -pedantic -Wall -Werror -g
 LDFLAGS    ?= -lm
 JAVACFLAGS ?= 
 TARGETS     = String LinkedList RandomProgram.class
